@@ -1,0 +1,27 @@
+name: deploy to npm
+on:
+  push:
+    branches:
+      - main
+
+
+jobs:
+  deploy:
+    name: deploy
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          ref: ${{ github.ref }}
+      - name: install
+        run: |
+          yarn install
+      - name: test
+        run: |
+          npm test
+      - name: publish
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
+        run: |
+          echo '//registry.npmjs.org/:_authToken=${NPM_TOKEN}' >> .npmrc
+          npm publish --access public
