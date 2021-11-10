@@ -1,0 +1,10 @@
+{
+  "extends": "./index.js",
+  "parserOptions": {
+    "project": "./tsconfig.json",
+  },
+
+  "ignorePatterns": ["node_modules/"],
+  "rules": {
+  }
+}

@@ -1,0 +1,6 @@
+test/
+
+.github
+.vscode
+
+*.tgz

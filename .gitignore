@@ -1,0 +1,23 @@
+# docs/
+
+
+node_modules/
+
+
+lib/**/*.d.ts
+lib/**/*.js
+lib/**/*.js.map
+
+test/**/*.d.ts
+test/**/*.js
+test/**/*.js.map
+
+example/**/*.d.ts
+example/**/*.js
+example/**/*.js.map
+
+
+docs/js/**/*.js
+docs/js/**/*.js.map
+
+*.tgz
