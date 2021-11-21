@@ -1,9 +1,11 @@
 {
   "files.exclude": {
+    "*.tgz": true,
+    "**/node_modules": true,
   },
   "files.eol": "\n",
   "editor.rulers": [80],
-  "eslint.packageManager": "yarn",
+  "eslint.packageManager": "npm",
   "eslint.lintTask.options": " . --ext .ts,.tsx",
   "eslint.workingDirectories": ["./"],
   "eslint.validate": ["typescript", "typescriptreact"],

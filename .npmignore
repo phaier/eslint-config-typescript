@@ -3,4 +3,7 @@ test/
 .github
 .vscode
 
+.editorconfig
+.gitignore
+
 *.tgz

@@ -16,5 +16,16 @@ module.exports = {
     // インクリメントの利用に関しては no-plusplus に説明されているリスクを考慮して残す
     // https://eslint.org/docs/rules/no-plusplus
     'no-plusplus': ['error', { allowForLoopAfterthoughts: true }],
+
+    // https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/extensions.md
+    // トランスパイルすれば拡張子が変わるので ts, tsx の拡張子は基本的に指定しない
+    'import/extensions': [
+      'error',
+      'never',
+      {
+        ts: 'never',
+        svg: 'always',
+      },
+    ],
   },
 };
