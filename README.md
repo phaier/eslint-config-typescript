@@ -7,7 +7,7 @@ ESLint configuration for a TypeScript project.
 Install package from npm
 
 ```
-yarn add @phaier/eslint-config-typescript --dev
+npm install @phaier/eslint-config-typescript --save--dev
 ```
 
 Create a `.eslintrc.js` file in the project folder with the following contents.
