@@ -5,7 +5,7 @@ export interface AppProps {
   title: string;
 }
 
-export const App: React.FunctionComponent<AppProps> = (props) => {
+export const App: React.FC<AppProps> = (props) => {
   const { title } = props;
 
   return <div>{title}</div>;

@@ -1,14 +1,13 @@
 {
   "files.exclude": {
     "*.tgz": true,
-    "**/node_modules": true,
+    "**/node_modules": true
   },
   "files.eol": "\n",
   "editor.rulers": [80],
-  "eslint.packageManager": "npm",
   "eslint.lintTask.options": " . --ext .ts,.tsx",
   "eslint.workingDirectories": ["./"],
-  "eslint.validate": ["typescript", "typescriptreact"],
+  "eslint.validate": ["typescript", "typescriptreact", "javascript", "javascriptreact"],
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true
@@ -21,18 +20,24 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true
   },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   },
   "prettier.enable": true,
   "prettier.configPath": ".prettierrc.json",
-  "prettier.prettierPath": "node_modules/prettier",
   "prettier.useEditorConfig": true,
-  "files.watcherExclude": {
-  },
-  "cSpell.words": [
-    "inabe49",
-    "phaier",
-    "plusplus"
-  ]
+  "files.watcherExclude": {},
+  "cSpell.words": ["inabe49", "phaier", "plusplus"]
 }
